@@ -1,0 +1,53 @@
+# API Keys & Secrets
+.env
+.env.local
+*.key
+credentials.json
+token.json
+client_secret*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Vector DB & Models
+chroma_db/
+*.faiss
+*.sqlite
+.cache/
+.files/
+
+# Generated reports
+reports/
+output/
+*.pdf
+!docs/*.pdf
+
+# Chainlit
+.chainlit/translations/
+.chainlit/.local/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,285 @@
+/* ===================================
+   AutoResearch Agent - Custom Styles
+   =================================== */
+
+/* Smooth animations */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Background gradient effect */
+.MuiContainer-root {
+  background: linear-gradient(135deg, rgba(123, 97, 255, 0.05) 0%, rgba(157, 135, 255, 0.05) 100%);
+}
+
+/* Headers with gradient */
+h1, h2, h3 {
+  background: linear-gradient(135deg, #7B61FF 0%, #9D87FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Message bubbles - more polished */
+.message-content {
+  border-radius: 12px !important;
+  padding: 1rem 1.25rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* User messages */
+[data-author="user"] .message-content {
+  background: linear-gradient(135deg, #7B61FF 0%, #9D87FF 100%) !important;
+  color: white !important;
+}
+
+/* Assistant messages */
+[data-author="AutoResearch"] .message-content {
+  border-left: 3px solid #7B61FF;
+}
+
+/* System messages - subtle */
+[data-author="System"] .message-content {
+  background: rgba(123, 97, 255, 0.08) !important;
+  border-left: 3px solid #9D87FF;
+  font-size: 0.95em;
+}
+
+/* Step containers (tool execution) */
+.step-container {
+  background: linear-gradient(135deg, rgba(123, 97, 255, 0.08) 0%, rgba(157, 135, 255, 0.08) 100%) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(123, 97, 255, 0.2) !important;
+  padding: 1rem !important;
+  margin: 0.5rem 0 !important;
+}
+
+/* Action buttons - polished */
+.MuiButton-root {
+  border-radius: 8px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 1.25rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.MuiButton-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(123, 97, 255, 0.3) !important;
+}
+
+/* Primary action buttons */
+.MuiButton-containedPrimary {
+  background: linear-gradient(135deg, #7B61FF 0%, #9D87FF 100%) !important;
+}
+
+/* Sidebar polish */
+.MuiDrawer-paper {
+  background: linear-gradient(180deg, #1A1A2E 0%, #0F0F1E 100%) !important;
+}
+
+/* Code blocks - syntax highlighting */
+pre {
+  background: #1A1A2E !important;
+  border-radius: 8px !important;
+  padding: 1rem !important;
+  border: 1px solid rgba(123, 97, 255, 0.2);
+}
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  font-size: 0.9em !important;
+}
+
+/* Inline code */
+:not(pre) > code {
+  background: rgba(123, 97, 255, 0.15) !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 4px !important;
+  color: #9D87FF !important;
+}
+
+/* Tables - modern style */
+table {
+  border-collapse: collapse !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background: linear-gradient(135deg, #7B61FF 0%, #9D87FF 100%) !important;
+}
+
+thead th {
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.75rem !important;
+}
+
+tbody td {
+  padding: 0.75rem !important;
+  border-bottom: 1px solid rgba(123, 97, 255, 0.1) !important;
+}
+
+tbody tr:hover {
+  background: rgba(123, 97, 255, 0.05) !important;
+}
+
+/* Links - elegant */
+a {
+  color: #7B61FF !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #7B61FF;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #9D87FF !important;
+  border-bottom: 1px solid #9D87FF;
+}
+
+/* Scrollbar - custom style */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(123, 97, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7B61FF 0%, #9D87FF 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7B61FF;
+}
+
+/* Chat input - polished */
+.input-bar {
+  border-radius: 12px !important;
+  border: 2px solid rgba(123, 97, 255, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.input-bar:focus-within {
+  border-color: #7B61FF !important;
+  box-shadow: 0 0 0 4px rgba(123, 97, 255, 0.1) !important;
+}
+
+/* Starter cards - modern */
+.starter-card {
+  border-radius: 12px !important;
+  border: 1px solid rgba(123, 97, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  transition: all 0.3s ease !important;
+}
+
+.starter-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(123, 97, 255, 0.2);
+  border-color: #7B61FF !important;
+}
+
+/* Loading spinner */
+.MuiCircularProgress-root {
+  color: #7B61FF !important;
+}
+
+/* Typing indicator - custom */
+.typing-indicator {
+  display: flex;
+  gap: 0.3em;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #7B61FF 0%, #9D87FF 100%);
+  border-radius: 50%;
+  animation: typing 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Smooth fade-in for new messages */
+.message-container {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid #7B61FF !important;
+  background: rgba(123, 97, 255, 0.05) !important;
+  padding: 1rem 1.5rem !important;
+  margin: 1rem 0 !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-style: italic;
+}
+
+/* Lists - more spacing */
+ul, ol {
+  padding-left: 1.5rem !important;
+}
+
+li {
+  margin: 0.4rem 0 !important;
+}
+
+/* Dividers - elegant */
+hr {
+  border: none !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(123, 97, 255, 0.3) 50%, transparent 100%) !important;
+  margin: 2rem 0 !important;
+}
+
+/* Footer area */
+.footer {
+  font-size: 0.85em;
+  color: #8B8B9C;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .message-content {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95em;
+  }
+  
+  h1 { font-size: 1.5rem !important; }
+  h2 { font-size: 1.25rem !important; }
+  h3 { font-size: 1.1rem !important; }
+}
